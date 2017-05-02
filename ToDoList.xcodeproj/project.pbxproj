@@ -207,6 +207,7 @@
 				TargetAttributes = {
 					56629AB31EB8439100C05824 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 8SJH22DH6T;
 						ProvisioningStyle = Automatic;
 					};
 					56629ACC1EB8439100C05824 = {
@@ -426,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8SJH22DH6T;
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.templefree.ToDoList;
@@ -437,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8SJH22DH6T;
 				INFOPLIST_FILE = ToDoList/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.templefree.ToDoList;
