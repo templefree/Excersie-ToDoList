@@ -7,9 +7,12 @@
 //
 
 #import "ToDoListTableViewController.h"
+#import "ConsoleViewController.h"
+#import "ConfiguringContext.h"
 
 @interface ToDoListTableViewController ()
 
+@property (weak, nonatomic) IBOutlet UITableViewCell *configuringContextTableViewCell;
 @end
 
 @implementation ToDoListTableViewController
@@ -90,14 +93,28 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    UIViewController * dstViewController =[segue destinationViewController];
+    if ([dstViewController isKindOfClass:[ConsoleViewController class]]) {
+        ConsoleViewController * consoleViewController = (ConsoleViewController *)dstViewController;
+        if (sender == self.configuringContextTableViewCell) {
+            consoleViewController.cmdStream = [[ConfiguringContext alloc] init];
+        }
+        else {
+            consoleViewController.cmdStream = Nil;
+        }
+        
+    }
+    
+    
+
 }
-*/
+
 
 @end

@@ -21,7 +21,7 @@
                         <sections>
                             <tableViewSection id="ZBc-Kn-46Z">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="NXx-N3-kgU" style="IBUITableViewCellStyleDefault" id="97T-s7-xR6">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConfiguringContext" textLabel="NXx-N3-kgU" style="IBUITableViewCellStyleDefault" id="97T-s7-xR6">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="97T-s7-xR6" id="xTn-bd-6VI">
@@ -50,15 +50,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="To-Do List" id="Q3J-tm-soP"/>
+                    <connections>
+                        <outlet property="configuringContextTableViewCell" destination="97T-s7-xR6" id="pS8-J6-MJT"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zSr-Nh-a4B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="160.80000000000001" y="138.98050974512745"/>
         </scene>
-        <!--Configuring Context View Controller-->
+        <!--Console View Controller-->
         <scene sceneID="U76-uf-xCM">
             <objects>
-                <viewController id="2cy-t6-qxy" customClass="ConfiguringContextViewController" sceneMemberID="viewController">
+                <viewController id="2cy-t6-qxy" customClass="ConsoleViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gXT-2D-rAd"/>
                         <viewControllerLayoutGuide type="bottom" id="Vfe-iW-a8M"/>
@@ -83,7 +86,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="consoleTextView" destination="gGV-3V-1xz" id="Nav-YN-e8B"/>
+                        <outlet property="consoleTextView" destination="gGV-3V-1xz" id="bu8-dY-RQ7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QdA-Mu-qg0" userLabel="First Responder" sceneMemberID="firstResponder"/>

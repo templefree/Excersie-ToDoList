@@ -1,31 +1,27 @@
 //
-//  ConfiguringContextViewController.m
+//  ConsoleViewController.m
 //  ToDoList
 //
-//  Created by 谭鹏飞 on 2017/5/4.
+//  Created by 谭鹏飞 on 2017/5/5.
 //  Copyright © 2017年 谭鹏飞. All rights reserved.
 //
 
-#import "ConfiguringContextViewController.h"
+#import "ConsoleViewController.h"
 #import "LogHelper.h"
-#import "GLHelper.h"
-
-@interface ConfiguringContextViewController ()
+@interface ConsoleViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *consoleTextView;
 
 @end
 
-@implementation ConfiguringContextViewController
+@implementation ConsoleViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     NSMutableArray *log = [NSMutableArray array];
-    
-    EAGLContext *firstCtx = [GLHelper CreateBestEAGLContext:log];
-    EAGLContext *secondCtx = [GLHelper CreateEAGLContextWithCommonShareGroup:log fromAnotherEAGLContext:firstCtx];
-    [GLHelper SetCurrentGLContext:log withEAGLContext:firstCtx];
-    [GLHelper SetCurrentGLContext:log withEAGLContext:secondCtx];
-    [GLHelper SetCurrentGLContext:log withEAGLContext:Nil];
+    if (self.cmdStream != Nil) {
+        [self.cmdStream RunCmdStream:log];
+    }
     self.consoleTextView.text = [LogHelper FormatLog:log];
 }
 
@@ -43,6 +39,5 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 
 @end
