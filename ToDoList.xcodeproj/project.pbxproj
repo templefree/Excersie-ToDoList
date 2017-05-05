@@ -15,6 +15,8 @@
 		56629AD21EB8439100C05824 /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56629AD11EB8439100C05824 /* ToDoListTests.m */; };
 		56629ADD1EB8439100C05824 /* ToDoListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56629ADC1EB8439100C05824 /* ToDoListUITests.m */; };
 		569B9C401EB8B26900386F91 /* ToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 569B9C3F1EB8B26900386F91 /* ToDoListTableViewController.m */; };
+		56EC9BE41EBC35D6000EB5ED /* LogHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EC9BE31EBC35D6000EB5ED /* LogHelper.m */; };
+		56EC9BE71EBC37A9000EB5ED /* GLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EC9BE61EBC37A9000EB5ED /* GLHelper.m */; };
 		56F6F4A61EBB11BA005939E0 /* ConfiguringContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56F6F4A51EBB11BA005939E0 /* ConfiguringContextViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,10 @@
 		56629ADE1EB8439100C05824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		569B9C3E1EB8B26900386F91 /* ToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListTableViewController.h; sourceTree = "<group>"; };
 		569B9C3F1EB8B26900386F91 /* ToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListTableViewController.m; sourceTree = "<group>"; };
+		56EC9BE21EBC35D6000EB5ED /* LogHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogHelper.h; path = Utilities/LogHelper.h; sourceTree = "<group>"; };
+		56EC9BE31EBC35D6000EB5ED /* LogHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LogHelper.m; path = Utilities/LogHelper.m; sourceTree = "<group>"; };
+		56EC9BE51EBC37A9000EB5ED /* GLHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLHelper.h; path = Utilities/GLHelper.h; sourceTree = "<group>"; };
+		56EC9BE61EBC37A9000EB5ED /* GLHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLHelper.m; path = Utilities/GLHelper.m; sourceTree = "<group>"; };
 		56F6F4A41EBB11BA005939E0 /* ConfiguringContextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfiguringContextViewController.h; path = ConfiguringContext/ConfiguringContextViewController.h; sourceTree = "<group>"; };
 		56F6F4A51EBB11BA005939E0 /* ConfiguringContextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfiguringContextViewController.m; path = ConfiguringContext/ConfiguringContextViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -104,6 +110,7 @@
 		56629AB61EB8439100C05824 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				56EC9BE11EBC3568000EB5ED /* Utilities */,
 				56F6F4A01EBB10AC005939E0 /* ConfiguringContext */,
 				56629ABA1EB8439100C05824 /* AppDelegate.h */,
 				56629ABB1EB8439100C05824 /* AppDelegate.m */,
@@ -142,6 +149,17 @@
 				56629ADE1EB8439100C05824 /* Info.plist */,
 			);
 			path = ToDoListUITests;
+			sourceTree = "<group>";
+		};
+		56EC9BE11EBC3568000EB5ED /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				56EC9BE21EBC35D6000EB5ED /* LogHelper.h */,
+				56EC9BE31EBC35D6000EB5ED /* LogHelper.m */,
+				56EC9BE51EBC37A9000EB5ED /* GLHelper.h */,
+				56EC9BE61EBC37A9000EB5ED /* GLHelper.m */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		56F6F4A01EBB10AC005939E0 /* ConfiguringContext */ = {
@@ -287,9 +305,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56EC9BE71EBC37A9000EB5ED /* GLHelper.m in Sources */,
 				56F6F4A61EBB11BA005939E0 /* ConfiguringContextViewController.m in Sources */,
 				56629ABC1EB8439100C05824 /* AppDelegate.m in Sources */,
 				569B9C401EB8B26900386F91 /* ToDoListTableViewController.m in Sources */,
+				56EC9BE41EBC35D6000EB5ED /* LogHelper.m in Sources */,
 				56629AB91EB8439100C05824 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

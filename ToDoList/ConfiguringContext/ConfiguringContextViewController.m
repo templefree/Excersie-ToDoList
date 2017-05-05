@@ -7,6 +7,8 @@
 //
 
 #import "ConfiguringContextViewController.h"
+#import "LogHelper.h"
+#import "GLHelper.h"
 
 @interface ConfiguringContextViewController ()
 
@@ -17,6 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSMutableArray *log = [NSMutableArray array];
+    
+    EAGLContext *firstCtx = [GLHelper CreateBestEAGLContext:log];
+    EAGLContext *secondCtx = [GLHelper CreateEAGLContextWithCommonShareGroup:log fromAnotherEAGLContext:firstCtx];
+    [GLHelper SetCurrentGLContext:log withEAGLContext:firstCtx];
+    [GLHelper SetCurrentGLContext:log withEAGLContext:secondCtx];
+    [GLHelper SetCurrentGLContext:log withEAGLContext:Nil];
+    self.consoleTextView.text = [LogHelper FormatLog:log];
 }
 
 - (void)didReceiveMemoryWarning {
