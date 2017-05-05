@@ -9,10 +9,12 @@
 #import "ToDoListTableViewController.h"
 #import "ConsoleViewController.h"
 #import "ConfiguringContext.h"
+#import "VerifyingCapabilities.h"
 
 @interface ToDoListTableViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableViewCell *configuringContextTableViewCell;
+@property (weak, nonatomic) IBOutlet UITableViewCell *VerifyingCapabilitiesTableViewCell;
 @end
 
 @implementation ToDoListTableViewController
@@ -105,6 +107,9 @@
         ConsoleViewController * consoleViewController = (ConsoleViewController *)dstViewController;
         if (sender == self.configuringContextTableViewCell) {
             consoleViewController.cmdStream = [[ConfiguringContext alloc] init];
+        }
+        else if (sender == self.VerifyingCapabilitiesTableViewCell) {
+            consoleViewController.cmdStream = [[VerifyingCapabilities alloc] init];
         }
         else {
             consoleViewController.cmdStream = Nil;

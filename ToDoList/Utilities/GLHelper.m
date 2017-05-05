@@ -83,5 +83,52 @@
     }
 }
 
++ (NSArray *)GetGLExtensions:(NSMutableArray *)log {
+    [log addObject:@("#GetGLExtensions:")];
+    EAGLContext *ctx = [EAGLContext currentContext];
+    NSMutableArray *extensions = [NSMutableArray array];
+    if (ctx != Nil) {
+        [log addObject:@("(ctx)[EAGLContext currentContext]...OK")];
+        EAGLRenderingAPI api = [ctx API];
+        if (api == kEAGLRenderingAPIOpenGLES3) {
+            int max;
+            glGetIntegerv(GL_NUM_EXTENSIONS, &max);
+            [log addObject:@("glGetIntegerv(GL_NUM_EXTENSIONS, &max)...OK")];
+            int i;
+            for (i = 0; i < max; ++i) {
+                const char * extensionCString = (char *)glGetStringi(GL_EXTENSIONS, i);
+                if (extensionCString == NULL) {
+                    break;
+                }
+                [extensions addObject:@(extensionCString)];
+            }
+            if (i == max) {
+                [log addObject:@("glGetStringi(GL_EXTENSIONS, i)...OK")];
+            }
+            else {
+                [log addObject:@("glGetStringi(GL_EXTENSIONS, i)...FAIL")];
+                [extensions removeAllObjects];
+            }
+            return extensions;
+        }
+        else if (api == kEAGLRenderingAPIOpenGLES2) {
+            const char * extensionsCString = (char *)glGetString(GL_EXTENSIONS);
+            if (extensionsCString != NULL) {
+                [log addObject:@("(char *)glGetString(GL_EXTENSIONS)...OK")];
+                NSString * extensionsString = @(extensionsCString);
+                return [extensionsString componentsSeparatedByString:@(" ")];
+            }
+            else {
+                [log addObject:@("(NULL)glGetString(GL_EXTENSIONS)...FAIL")];
+            }
+            
+        }
+    }
+    else {
+        [log addObject:@("(Nil)[EAGLContext currentContext]...FAIL")];
+    }
+    return extensions;
+}
+
 
 @end

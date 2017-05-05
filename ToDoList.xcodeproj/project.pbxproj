@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5620C3421EBC748C00E9870C /* ConsoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5620C3411EBC748C00E9870C /* ConsoleViewController.m */; };
 		5620C3461EBC79D100E9870C /* ConfiguringContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 5620C3451EBC79D100E9870C /* ConfiguringContext.m */; };
+		565DCDA01EBC90480026604B /* VerifyingCapabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 565DCD9F1EBC90480026604B /* VerifyingCapabilities.m */; };
 		56629AB91EB8439100C05824 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56629AB81EB8439100C05824 /* main.m */; };
 		56629ABC1EB8439100C05824 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56629ABB1EB8439100C05824 /* AppDelegate.m */; };
 		56629AC21EB8439100C05824 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56629AC01EB8439100C05824 /* Main.storyboard */; };
@@ -44,6 +45,8 @@
 		5620C3431EBC78BC00E9870C /* ConsoleCmdStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleCmdStream.h; sourceTree = "<group>"; };
 		5620C3441EBC79D100E9870C /* ConfiguringContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfiguringContext.h; path = ConfiguringContext/ConfiguringContext.h; sourceTree = "<group>"; };
 		5620C3451EBC79D100E9870C /* ConfiguringContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfiguringContext.m; path = ConfiguringContext/ConfiguringContext.m; sourceTree = "<group>"; };
+		565DCD9E1EBC90480026604B /* VerifyingCapabilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VerifyingCapabilities.h; path = VerifyingCapabilities/VerifyingCapabilities.h; sourceTree = "<group>"; };
+		565DCD9F1EBC90480026604B /* VerifyingCapabilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VerifyingCapabilities.m; path = VerifyingCapabilities/VerifyingCapabilities.m; sourceTree = "<group>"; };
 		56629AB41EB8439100C05824 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56629AB81EB8439100C05824 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		56629ABA1EB8439100C05824 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -94,6 +97,8 @@
 		5620C33F1EBC662300E9870C /* VerifyingCapabilities */ = {
 			isa = PBXGroup;
 			children = (
+				565DCD9E1EBC90480026604B /* VerifyingCapabilities.h */,
+				565DCD9F1EBC90480026604B /* VerifyingCapabilities.m */,
 			);
 			name = VerifyingCapabilities;
 			sourceTree = "<group>";
@@ -327,6 +332,7 @@
 				56EC9BE41EBC35D6000EB5ED /* LogHelper.m in Sources */,
 				56629AB91EB8439100C05824 /* main.m in Sources */,
 				5620C3461EBC79D100E9870C /* ConfiguringContext.m in Sources */,
+				565DCDA01EBC90480026604B /* VerifyingCapabilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

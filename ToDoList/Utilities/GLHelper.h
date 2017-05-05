@@ -16,4 +16,6 @@
 
 + (void)SetCurrentGLContext:(NSMutableArray *)log withEAGLContext:(EAGLContext *)ctx;
 
++ (NSArray *)GetGLExtensions:(NSMutableArray *)log;
+
 @end
