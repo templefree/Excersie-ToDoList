@@ -10,6 +10,29 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--GLKit View Controller-->
+        <scene sceneID="ZrI-Ki-MfF">
+            <objects>
+                <glkViewController preferredFramesPerSecond="30" id="hHV-ZG-Pqo" customClass="GraphicViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2SP-sh-11u"/>
+                        <viewControllerLayoutGuide type="bottom" id="BQU-yi-syb"/>
+                    </layoutGuides>
+                    <glkView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" enableSetNeedsDisplay="NO" id="9iM-Xu-1Fk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <connections>
+                            <outlet property="delegate" destination="hHV-ZG-Pqo" id="hvL-NS-4tE"/>
+                        </connections>
+                    </glkView>
+                    <connections>
+                        <outlet property="graphicGLKView" destination="9iM-Xu-1Fk" id="2UH-aT-vf8"/>
+                    </connections>
+                </glkViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rfZ-tr-my3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="1073"/>
+        </scene>
         <!--To-Do List-->
         <scene sceneID="ezF-Ux-igU">
             <objects>
@@ -19,7 +42,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
-                            <tableViewSection headerTitle="Console" id="ZBc-Kn-46Z">
+                            <tableViewSection headerTitle="CLI" id="ZBc-Kn-46Z">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConfiguringContext" textLabel="NXx-N3-kgU" style="IBUITableViewCellStyleDefault" id="97T-s7-xR6">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
@@ -59,6 +82,30 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="2cy-t6-qxy" kind="show" id="hMi-LM-SuR"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="GUI" id="G41-Z8-bBu">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DrawingWithGLKit" textLabel="D67-Gi-5l7" style="IBUITableViewCellStyleDefault" id="VLa-LA-QAX">
+                                        <rect key="frame" x="0.0" y="144" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VLa-LA-QAX" id="vfD-Rh-LCa">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Drwaing with OpenGL ES and GLKit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="D67-Gi-5l7">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="hHV-ZG-Pqo" kind="show" id="ru3-CH-At7"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -112,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QdA-Mu-qg0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="988" y="139"/>
+            <point key="canvasLocation" x="-314" y="1073"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FRF-Fm-Auv">

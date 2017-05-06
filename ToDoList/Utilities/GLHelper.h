@@ -14,7 +14,7 @@
 
 + (EAGLContext *)CreateEAGLContextWithCommonShareGroup:(NSMutableArray *)log fromAnotherEAGLContext:(EAGLContext *) anotherCtx;
 
-+ (void)SetCurrentGLContext:(NSMutableArray *)log withEAGLContext:(EAGLContext *)ctx;
++ (BOOL)SetCurrentGLContext:(NSMutableArray *)log withEAGLContext:(EAGLContext *)ctx;
 
 + (NSArray *)GetGLExtensions:(NSMutableArray *)log;
 
