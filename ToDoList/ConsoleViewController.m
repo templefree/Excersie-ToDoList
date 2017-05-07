@@ -22,7 +22,7 @@
     if (self.cmdStream != Nil) {
         [self.cmdStream RunCmdStream:log];
     }
-    self.consoleTextView.text = [LogHelper FormatLog:log];
+    self.consoleTextView.text = [LogHelper StreamLog:log];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -10,7 +10,7 @@
 
 @implementation LogHelper
 
-+ (NSMutableString *)FormatLog:(NSArray *)log {
++ (NSMutableString *)StreamLog:(NSArray *)log {
     NSMutableString * fortmattedLog = [NSMutableString string];
     for(NSString * logLine in log) {
         [fortmattedLog appendString: logLine];

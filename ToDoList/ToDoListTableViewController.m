@@ -10,17 +10,17 @@
 #import "ConsoleViewController.h"
 #import "ConfiguringContext.h"
 #import "VerifyingCapabilities.h"
+#import "CompilingShaders.h"
 
 @interface ToDoListTableViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableViewCell *configuringContextTableViewCell;
 @property (weak, nonatomic) IBOutlet UITableViewCell *VerifyingCapabilitiesTableViewCell;
+@property (weak, nonatomic) IBOutlet UITableViewCell *CompilingShadersTableViewCell;
 @end
 
 @implementation ToDoListTableViewController
-- (IBAction) unwindToDoList:(UIStoryboardSegue *)segue {
-    
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -110,6 +110,9 @@
         }
         else if (sender == self.VerifyingCapabilitiesTableViewCell) {
             consoleViewController.cmdStream = [[VerifyingCapabilities alloc] init];
+        }
+        else if (sender == self.CompilingShadersTableViewCell) {
+            consoleViewController.cmdStream = [[CompilingShaders alloc] init];
         }
         else {
             consoleViewController.cmdStream = Nil;

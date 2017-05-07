@@ -10,6 +10,6 @@
 
 @interface LogHelper : NSObject
 
-+ (NSMutableString *)FormatLog:(NSArray *)log;
++ (NSMutableString *)StreamLog:(NSArray *)log;
 
 @end

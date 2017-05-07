@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		5620C3421EBC748C00E9870C /* ConsoleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5620C3411EBC748C00E9870C /* ConsoleViewController.m */; };
 		5620C3461EBC79D100E9870C /* ConfiguringContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 5620C3451EBC79D100E9870C /* ConfiguringContext.m */; };
+		562D91991EBEFAF800F8EA74 /* SimpleVertex.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 562D91981EBEFAF800F8EA74 /* SimpleVertex.glsl */; };
+		562D919C1EBEFD1A00F8EA74 /* SimpleFragment.glsl in Resources */ = {isa = PBXBuildFile; fileRef = 562D919B1EBEFD1A00F8EA74 /* SimpleFragment.glsl */; };
+		562D91A01EBEFED200F8EA74 /* CompilingShaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 562D919F1EBEFED200F8EA74 /* CompilingShaders.m */; };
 		565DCDA01EBC90480026604B /* VerifyingCapabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 565DCD9F1EBC90480026604B /* VerifyingCapabilities.m */; };
 		56629AB91EB8439100C05824 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 56629AB81EB8439100C05824 /* main.m */; };
 		56629ABC1EB8439100C05824 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 56629ABB1EB8439100C05824 /* AppDelegate.m */; };
@@ -18,6 +21,7 @@
 		56629AD21EB8439100C05824 /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56629AD11EB8439100C05824 /* ToDoListTests.m */; };
 		56629ADD1EB8439100C05824 /* ToDoListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 56629ADC1EB8439100C05824 /* ToDoListUITests.m */; };
 		567F0DF21EBDA330003F8C52 /* GraphicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 567F0DF11EBDA330003F8C52 /* GraphicViewController.m */; };
+		56999B4F1EBF6BAC0016B5A6 /* ResourceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 56999B4E1EBF6BAC0016B5A6 /* ResourceHelper.m */; };
 		569B9C401EB8B26900386F91 /* ToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 569B9C3F1EB8B26900386F91 /* ToDoListTableViewController.m */; };
 		56A4D4361EBD9C650071A0E6 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A4D4351EBD9C650071A0E6 /* GLKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		56A4D4381EBD9C9B0071A0E6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56A4D4371EBD9C9B0071A0E6 /* OpenGLES.framework */; settings = {ATTRIBUTES = (Required, ); }; };
@@ -48,6 +52,10 @@
 		5620C3431EBC78BC00E9870C /* ConsoleCmdStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleCmdStream.h; sourceTree = "<group>"; };
 		5620C3441EBC79D100E9870C /* ConfiguringContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfiguringContext.h; path = ConfiguringContext/ConfiguringContext.h; sourceTree = "<group>"; };
 		5620C3451EBC79D100E9870C /* ConfiguringContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfiguringContext.m; path = ConfiguringContext/ConfiguringContext.m; sourceTree = "<group>"; };
+		562D91981EBEFAF800F8EA74 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleVertex.glsl; path = shaders/SimpleVertex.glsl; sourceTree = "<group>"; };
+		562D919B1EBEFD1A00F8EA74 /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleFragment.glsl; path = shaders/SimpleFragment.glsl; sourceTree = "<group>"; };
+		562D919E1EBEFED200F8EA74 /* CompilingShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompilingShaders.h; path = CompilingShaders/CompilingShaders.h; sourceTree = "<group>"; };
+		562D919F1EBEFED200F8EA74 /* CompilingShaders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CompilingShaders.m; path = CompilingShaders/CompilingShaders.m; sourceTree = "<group>"; };
 		565DCD9E1EBC90480026604B /* VerifyingCapabilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VerifyingCapabilities.h; path = VerifyingCapabilities/VerifyingCapabilities.h; sourceTree = "<group>"; };
 		565DCD9F1EBC90480026604B /* VerifyingCapabilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VerifyingCapabilities.m; path = VerifyingCapabilities/VerifyingCapabilities.m; sourceTree = "<group>"; };
 		56629AB41EB8439100C05824 /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +74,8 @@
 		56629ADE1EB8439100C05824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		567F0DF01EBDA330003F8C52 /* GraphicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphicViewController.h; sourceTree = "<group>"; };
 		567F0DF11EBDA330003F8C52 /* GraphicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphicViewController.m; sourceTree = "<group>"; };
+		56999B4D1EBF6BAC0016B5A6 /* ResourceHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResourceHelper.h; path = Utilities/ResourceHelper.h; sourceTree = "<group>"; };
+		56999B4E1EBF6BAC0016B5A6 /* ResourceHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResourceHelper.m; path = Utilities/ResourceHelper.m; sourceTree = "<group>"; };
 		569B9C3E1EB8B26900386F91 /* ToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListTableViewController.h; sourceTree = "<group>"; };
 		569B9C3F1EB8B26900386F91 /* ToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListTableViewController.m; sourceTree = "<group>"; };
 		56A4D4351EBD9C650071A0E6 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
@@ -112,6 +122,24 @@
 			name = VerifyingCapabilities;
 			sourceTree = "<group>";
 		};
+		562D919A1EBEFB1100F8EA74 /* shaders */ = {
+			isa = PBXGroup;
+			children = (
+				562D919B1EBEFD1A00F8EA74 /* SimpleFragment.glsl */,
+				562D91981EBEFAF800F8EA74 /* SimpleVertex.glsl */,
+			);
+			name = shaders;
+			sourceTree = "<group>";
+		};
+		562D919D1EBEFE4B00F8EA74 /* CompilingShaders */ = {
+			isa = PBXGroup;
+			children = (
+				562D919E1EBEFED200F8EA74 /* CompilingShaders.h */,
+				562D919F1EBEFED200F8EA74 /* CompilingShaders.m */,
+			);
+			name = CompilingShaders;
+			sourceTree = "<group>";
+		};
 		56629AAB1EB8439000C05824 = {
 			isa = PBXGroup;
 			children = (
@@ -137,20 +165,22 @@
 			isa = PBXGroup;
 			children = (
 				56629ABA1EB8439100C05824 /* AppDelegate.h */,
-				56629ABB1EB8439100C05824 /* AppDelegate.m */,
-				56629AC31EB8439100C05824 /* Assets.xcassets */,
-				56F6F4A01EBB10AC005939E0 /* ConfiguringContext */,
 				5620C3431EBC78BC00E9870C /* ConsoleCmdStream.h */,
 				5620C3401EBC748C00E9870C /* ConsoleViewController.h */,
-				5620C3411EBC748C00E9870C /* ConsoleViewController.m */,
 				567F0DF01EBDA330003F8C52 /* GraphicViewController.h */,
+				569B9C3E1EB8B26900386F91 /* ToDoListTableViewController.h */,
+				56629ABB1EB8439100C05824 /* AppDelegate.m */,
+				5620C3411EBC748C00E9870C /* ConsoleViewController.m */,
 				567F0DF11EBDA330003F8C52 /* GraphicViewController.m */,
+				569B9C3F1EB8B26900386F91 /* ToDoListTableViewController.m */,
 				56629AC81EB8439100C05824 /* Info.plist */,
+				56629AC31EB8439100C05824 /* Assets.xcassets */,
+				562D919D1EBEFE4B00F8EA74 /* CompilingShaders */,
+				56F6F4A01EBB10AC005939E0 /* ConfiguringContext */,
 				56629AC51EB8439100C05824 /* LaunchScreen.storyboard */,
 				56629AC01EB8439100C05824 /* Main.storyboard */,
+				562D919A1EBEFB1100F8EA74 /* shaders */,
 				56629AB71EB8439100C05824 /* Supporting Files */,
-				569B9C3E1EB8B26900386F91 /* ToDoListTableViewController.h */,
-				569B9C3F1EB8B26900386F91 /* ToDoListTableViewController.m */,
 				56EC9BE11EBC3568000EB5ED /* Utilities */,
 				5620C33F1EBC662300E9870C /* VerifyingCapabilities */,
 			);
@@ -199,6 +229,8 @@
 				56EC9BE31EBC35D6000EB5ED /* LogHelper.m */,
 				56EC9BE51EBC37A9000EB5ED /* GLHelper.h */,
 				56EC9BE61EBC37A9000EB5ED /* GLHelper.m */,
+				56999B4D1EBF6BAC0016B5A6 /* ResourceHelper.h */,
+				56999B4E1EBF6BAC0016B5A6 /* ResourceHelper.m */,
 			);
 			name = Utilities;
 			sourceTree = "<group>";
@@ -320,8 +352,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				56629AC71EB8439100C05824 /* LaunchScreen.storyboard in Resources */,
+				562D91991EBEFAF800F8EA74 /* SimpleVertex.glsl in Resources */,
 				56629AC41EB8439100C05824 /* Assets.xcassets in Resources */,
 				56629AC21EB8439100C05824 /* Main.storyboard in Resources */,
+				562D919C1EBEFD1A00F8EA74 /* SimpleFragment.glsl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,9 +386,11 @@
 				56629ABC1EB8439100C05824 /* AppDelegate.m in Sources */,
 				569B9C401EB8B26900386F91 /* ToDoListTableViewController.m in Sources */,
 				56EC9BE41EBC35D6000EB5ED /* LogHelper.m in Sources */,
+				56999B4F1EBF6BAC0016B5A6 /* ResourceHelper.m in Sources */,
 				56629AB91EB8439100C05824 /* main.m in Sources */,
 				5620C3461EBC79D100E9870C /* ConfiguringContext.m in Sources */,
 				565DCDA01EBC90480026604B /* VerifyingCapabilities.m in Sources */,
+				562D91A01EBEFED200F8EA74 /* CompilingShaders.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

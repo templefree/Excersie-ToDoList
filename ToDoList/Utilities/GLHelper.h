@@ -18,4 +18,6 @@
 
 + (NSArray *)GetGLExtensions:(NSMutableArray *)log;
 
++ (BOOL)CheckGLError:(NSMutableArray *)log forGLCmd:(NSString *) glCmd;
+
 @end

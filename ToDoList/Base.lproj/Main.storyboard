@@ -84,12 +84,32 @@
                                             <segue destination="2cy-t6-qxy" kind="show" id="hMi-LM-SuR"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CompilingShaders" textLabel="lhb-oL-Gae" style="IBUITableViewCellStyleDefault" id="XNr-GB-sst">
+                                        <rect key="frame" x="0.0" y="116" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XNr-GB-sst" id="aVu-CH-Wo8">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Compiling OpenGL ES Shaders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lhb-oL-Gae">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="2cy-t6-qxy" kind="show" id="uyj-Rp-cOU"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="GUI" id="G41-Z8-bBu">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DrawingWithGLKit" textLabel="D67-Gi-5l7" style="IBUITableViewCellStyleDefault" id="VLa-LA-QAX">
-                                        <rect key="frame" x="0.0" y="144" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="188" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VLa-LA-QAX" id="vfD-Rh-LCa">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -118,6 +138,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="To-Do List" id="Q3J-tm-soP"/>
                     <connections>
+                        <outlet property="CompilingShadersTableViewCell" destination="XNr-GB-sst" id="Cs4-K3-LQZ"/>
                         <outlet property="VerifyingCapabilitiesTableViewCell" destination="ASA-1B-vQX" id="LQG-zu-ZFD"/>
                         <outlet property="configuringContextTableViewCell" destination="97T-s7-xR6" id="pS8-J6-MJT"/>
                     </connections>

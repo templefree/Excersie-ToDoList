@@ -143,6 +143,21 @@
     }
     return extensions;
 }
-
++ (BOOL)CheckGLError:(NSMutableArray *)log forGLCmd:(NSString *) glCmd {
+    GLenum error;
+    NSMutableString *logItem = [NSMutableString string];
+    [logItem appendString:glCmd];
+    error = glGetError();
+    if (error == GL_NO_ERROR){
+        [logItem appendString:@"...OK"];
+        [log addObject:logItem];
+        return YES;
+    }
+    else {
+        [logItem appendFormat:@"...ERROR:%x", error];
+        [log addObject:logItem];
+        return NO;
+    }
+}
 
 @end
