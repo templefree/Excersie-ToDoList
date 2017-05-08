@@ -52,8 +52,8 @@
 		5620C3431EBC78BC00E9870C /* ConsoleCmdStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConsoleCmdStream.h; sourceTree = "<group>"; };
 		5620C3441EBC79D100E9870C /* ConfiguringContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfiguringContext.h; path = ConfiguringContext/ConfiguringContext.h; sourceTree = "<group>"; };
 		5620C3451EBC79D100E9870C /* ConfiguringContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfiguringContext.m; path = ConfiguringContext/ConfiguringContext.m; sourceTree = "<group>"; };
-		562D91981EBEFAF800F8EA74 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleVertex.glsl; path = shaders/SimpleVertex.glsl; sourceTree = "<group>"; };
-		562D919B1EBEFD1A00F8EA74 /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleFragment.glsl; path = shaders/SimpleFragment.glsl; sourceTree = "<group>"; };
+		562D91981EBEFAF800F8EA74 /* SimpleVertex.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleVertex.glsl; path = Shaders/SimpleVertex.glsl; sourceTree = "<group>"; };
+		562D919B1EBEFD1A00F8EA74 /* SimpleFragment.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = SimpleFragment.glsl; path = Shaders/SimpleFragment.glsl; sourceTree = "<group>"; };
 		562D919E1EBEFED200F8EA74 /* CompilingShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompilingShaders.h; path = CompilingShaders/CompilingShaders.h; sourceTree = "<group>"; };
 		562D919F1EBEFED200F8EA74 /* CompilingShaders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CompilingShaders.m; path = CompilingShaders/CompilingShaders.m; sourceTree = "<group>"; };
 		565DCD9E1EBC90480026604B /* VerifyingCapabilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VerifyingCapabilities.h; path = VerifyingCapabilities/VerifyingCapabilities.h; sourceTree = "<group>"; };
@@ -122,13 +122,13 @@
 			name = VerifyingCapabilities;
 			sourceTree = "<group>";
 		};
-		562D919A1EBEFB1100F8EA74 /* shaders */ = {
+		562D919A1EBEFB1100F8EA74 /* Shaders */ = {
 			isa = PBXGroup;
 			children = (
 				562D919B1EBEFD1A00F8EA74 /* SimpleFragment.glsl */,
 				562D91981EBEFAF800F8EA74 /* SimpleVertex.glsl */,
 			);
-			name = shaders;
+			name = Shaders;
 			sourceTree = "<group>";
 		};
 		562D919D1EBEFE4B00F8EA74 /* CompilingShaders */ = {
@@ -179,7 +179,7 @@
 				56F6F4A01EBB10AC005939E0 /* ConfiguringContext */,
 				56629AC51EB8439100C05824 /* LaunchScreen.storyboard */,
 				56629AC01EB8439100C05824 /* Main.storyboard */,
-				562D919A1EBEFB1100F8EA74 /* shaders */,
+				562D919A1EBEFB1100F8EA74 /* Shaders */,
 				56629AB71EB8439100C05824 /* Supporting Files */,
 				56EC9BE11EBC3568000EB5ED /* Utilities */,
 				5620C33F1EBC662300E9870C /* VerifyingCapabilities */,
